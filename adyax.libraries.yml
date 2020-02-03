@@ -1,4 +1,7 @@
-global-scripts:
+jcf-change-form:
+  css:
+    theme:
+      css/jcf.css: {}
   js:
     js/jcf.js: {}
     js/jcf.checkbox.js: {}

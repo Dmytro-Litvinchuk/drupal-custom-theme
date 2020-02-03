@@ -4,7 +4,7 @@ description: This is a adyax sub theme of Bob
 core: 8.x
 base theme: bartik
 libraries:
-  - adyax/global-scripts
+  - adyax/jcf-change-form
 regions:
   header: Header
   primary_menu: 'Primary menu'
