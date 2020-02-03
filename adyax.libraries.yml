@@ -1,0 +1,8 @@
+global-scripts:
+  js:
+    js/jcf.js: {}
+    js/jcf.checkbox.js: {}
+    js/jcf.radio.js: {}
+    js/custom.js: {}
+  dependencies:
+    - core/jquery

@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function adyax_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    $type = $node->bundle();
+    // Some CT is CT type with my field faq and sitemap.
+    if ($type == 'some_ct') {
+      $value = $node->get('field_template')->getString();
+      $suggestions[] = 'page__node__' . $value;
+    }
+  }
+}
