@@ -1,11 +1,22 @@
 jcf-change-form:
+  version: 1.2.3
+  license:
+    name: MIT
+    url: https://github.com/w3co/jcf/blob/master/LICENSE.txt
+    gpl-compatible: true
   css:
     theme:
-      css/jcf.css: {}
+      https://cdnjs.cloudflare.com/ajax/libs/jcf/1.2.3/css/theme-minimal/jcf.css: { type: external, minified: true }
   js:
-    js/jcf.js: {}
-    js/jcf.checkbox.js: {}
-    js/jcf.radio.js: {}
-    js/custom.js: {}
+    https://cdnjs.cloudflare.com/ajax/libs/jcf/1.2.3/js/jcf.js: { type: external, minified: true }
+    https://cdnjs.cloudflare.com/ajax/libs/jcf/1.2.3/js/jcf.checkbox.js: { type: external, minified: true }
+    https://cdnjs.cloudflare.com/ajax/libs/jcf/1.2.3/js/jcf.radio.js: { type: external, minified: true }
   dependencies:
     - core/jquery
+
+global-scripts:
+  js:
+    js/custom.js: {}
+  dependencies:
+      - core/jquery
+
